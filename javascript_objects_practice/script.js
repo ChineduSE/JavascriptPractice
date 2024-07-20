@@ -1,10 +1,17 @@
 const CurrentYear = prompt("What is the current year?");
 
+//Object for Chinedu
 const ChineduInfo = {
   first_name: 'Chinedu',
   last_name: 'Nweke',
   age: CurrentYear - 1999,
-  friends: ['Jesuovie', 'Peuliar', 'Samuel', 'Nelson']
+  friends: ['Jesuovie', 'Peuliar', 'Samuel', 'Nelson'],
+
+  //writing a function value within an object
+
+  futureAge: function(){
+    return this.age + 5;
+  }
 };
 
 // assigning more properties to Chinedu's Info
@@ -25,9 +32,13 @@ if (ChineduInfo[UserResp]) console.log(UserFeedback);
 else console.log("Chinedu doesn't have such info!");
 
 
-console.log(ChineduInfo);
-console.log(ChineduInfo.brothers[1]);
+// console.log(ChineduInfo);
+// console.log(ChineduInfo.brothers[1]);
 
 const finalcomment = (`${ChineduInfo.first_name} has ${ChineduInfo.friends.length} friends, and his best friend is called ${ChineduInfo.friends[ChineduInfo.friends.length - 1]}`);
 
-console.log(finalcomment);
+// console.log(finalcomment);
+console.log(`${ChineduInfo.first_name}'s current age is 
+${ChineduInfo.age}. This is the year ${CurrentYear}.
+In the next 5 years, Chinedu will be ${ChineduInfo.futureAge()}
+years old`);
