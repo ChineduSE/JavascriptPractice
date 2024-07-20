@@ -28,6 +28,6 @@ else console.log("Chinedu doesn't have such info!");
 console.log(ChineduInfo);
 console.log(ChineduInfo.brothers[1]);
 
-const finalcomment = (`${ChineduInfo.first_name} has ${ChineduInfo.friends.length} friends, and his best friend is called ${ChineduInfo.friends[ChineduInfo.friends.length - 2]}`);
+const finalcomment = (`${ChineduInfo.first_name} has ${ChineduInfo.friends.length} friends, and his best friend is called ${ChineduInfo.friends[ChineduInfo.friends.length - 1]}`);
 
 console.log(finalcomment);
