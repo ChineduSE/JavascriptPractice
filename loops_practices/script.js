@@ -72,3 +72,29 @@ for(let i = 0; i < chinedu.length; i++) {
 }
 
 //looping arrays backwards 
+
+console.log("LOOPING BACKWARDS")
+for(let i = chinedu.length - 1; i >= 0; i--) {
+  console.log(chinedu[i]);
+}
+
+// Loop in a loop
+
+console.log ('Loop in a loop')
+for(let excercise = 1; excercise < 4; excercise++){
+  console.log(`Starting Exercise ${excercise}`)
+    for(let rep = 1; rep < 6; rep++){
+      console.log(`Weight lifting ${rep}`);
+    }
+  }
+
+
+  // While loop
+  console.log('------- DICE GAME (While Loop) --------')
+  let dice = Math.trunc(Math.random() * 6) + 1;
+
+  while (dice !== 6) {
+    console.log(`You rolled a ${dice}`)
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if(dice == 6) console.log (`You rolled a ${dice}, you win!!!`);
+  }
