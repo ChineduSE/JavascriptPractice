@@ -7,7 +7,7 @@ const ChineduInfo = {
   age: CurrentYear - 1999,
   friends: ['Jesuovie', 'Peuliar', 'Samuel', 'Nelson'],
 
-  //writing a function value within an object
+  //writing a function value within an object in Javascript
 
   futureAge: function(){
     return this.age + 5;
